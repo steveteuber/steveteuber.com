@@ -1,2 +1,3 @@
-# steveteuber.github.io
+# steveteuber.com
+
 My personal website.
