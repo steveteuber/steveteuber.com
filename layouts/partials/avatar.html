@@ -1,0 +1,10 @@
+{{ $size := $.Site.Params.Avatar.Size | default 200 -}}
+{{ $srcset := slice -}}
+
+{{ range $i := (seq 1 3) -}}
+  {{ $srcset = $srcset | append (printf "%s?s=%d %dx" $.Site.Params.Avatar.Url (mul $i $size) $i) }}
+{{ end }}
+
+<a href="{{ .Site.BaseURL | relURL }}">
+  <img class="avatar" alt="{{ .Site.Params.Avatar.Name }}" width="{{ $size }}" height="{{ $size }}" src="{{ .Site.Params.Avatar.Url }}?s={{ $size }}" srcset="{{ delimit $srcset "," }}">
+</a>

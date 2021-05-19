@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+{{ partial "avatar.html" . }}
+
 <header>
   <h1>{{ .Site.Params.Avatar.Name }}</h1>
   <p>{{ .Site.Params.Avatar.Info }}</p>
