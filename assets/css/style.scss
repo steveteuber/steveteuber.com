@@ -1,6 +1,7 @@
 $background-color: #0f0f0f;
 $font-color: #7e7e7e;
 $border-color: #6b6b6b;
+$hover-color: #f3f3f3;
 
 body {
   background-color: $background-color;
@@ -48,5 +49,35 @@ img {
   &.avatar {
     border-radius: 50%;
     border: 1px solid $border-color;
+  }
+}
+
+ul {
+  &.social {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  a {
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    &:hover svg {
+      fill: $hover-color;
+    }
+  }
+
+  svg {
+    transform: scale(0.7);
+    height: inherit;
+    width: inherit;
+
+    fill: $font-color;
   }
 }
