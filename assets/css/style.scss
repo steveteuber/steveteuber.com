@@ -1,5 +1,6 @@
 $background-color: #0f0f0f;
 $font-color: #7e7e7e;
+$border-color: #6b6b6b;
 
 body {
   background-color: $background-color;
@@ -11,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 85vh;
 }
 
 main {
@@ -40,5 +41,12 @@ header {
     margin-top: 0px;
     font-size: 20px;
     font-weight: 300;
+  }
+}
+
+img {
+  &.avatar {
+    border-radius: 50%;
+    border: 1px solid $border-color;
   }
 }
