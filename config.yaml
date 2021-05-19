@@ -1,4 +1,8 @@
 title: Steve Teuber - DevOps Engineer
+params:
+  avatar:
+    name: Steve Teuber
+    info: DevOps Engineer
 
 disableKinds:
 - RSS
