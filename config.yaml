@@ -4,9 +4,25 @@ params:
     url: https://avatars.githubusercontent.com/steveteuber
     name: Steve Teuber
     info: DevOps Engineer
+  social:
+  - icon: github
+    url: https://github.com/steveteuber
+  - icon: docker
+    url: https://hub.docker.com/u/steveteuber
+  - icon: linkedin
+    url: https://linkedin.com/in/steve-teuber
+  - icon: xing
+    url: https://xing.to/steveteuber
 
 disableKinds:
 - RSS
 - sitemap
 - taxonomy
 - term
+
+module:
+  imports:
+  - path: github.com/FortAwesome/Font-Awesome
+    mounts:
+    - source: svgs/brands
+      target: assets/svgs
