@@ -38,3 +38,4 @@ jobs:
         user_email: github-actions[bot]@users.noreply.github.com
         full_commit_message: ${{ github.event.head_commit.message }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        cname: ${{ github.event.repository.name }}
