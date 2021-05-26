@@ -27,8 +27,18 @@ jobs:
         hugo-version: 0.83.1
         extended: true
 
+    - name: Setup Tidy
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y tidy
+
     - name: Build Site
       run: hugo
+
+    - name: Run Tidy
+      run: tidy -m public/*.html
+      env:
+        HTML_TIDY: .tidyrc
 
     - name: Deploy to Github Pages
       if: startsWith(github.ref, 'refs/tags/')
