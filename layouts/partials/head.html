@@ -1,6 +1,8 @@
 <meta charset="utf-8">
 {{ hugo.Generator }}
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="{{ delimit .Site.Params.Meta.Keywords ", " }}">
+<meta name="description" content="{{ .Site.Params.Meta.Description }}">
 
 {{ $css := resources.Get "css/style.scss" | toCSS (dict "outputStyle" "compressed")}}
 <style type="text/css">{{ $css.Content | safeCSS }}</style>
