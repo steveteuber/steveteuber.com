@@ -1,5 +1,11 @@
 title: Steve Teuber - DevOps Engineer
 params:
+  meta:
+    keywords: [DevOps, Docker, GitHub, Go, Kubernetes, Terraform, Vault]
+    description: >-
+      Hi! I'm Steve. I'm a DevOps Engineer with a focus on Automation and Security.
+      My daily toolset includes Docker, GitHub, Go, Kubernetes, Terraform and Vault.
+      However, I'm trying to find things that are really cool and not just a hype.
   avatar:
     url: https://avatars.githubusercontent.com/steveteuber
     name: Steve Teuber
