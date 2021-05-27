@@ -67,6 +67,7 @@ ul {
     display: block;
     width: 35px;
     height: 35px;
+    overflow: hidden;
 
     &:hover svg {
       fill: $hover-color;
