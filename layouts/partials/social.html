@@ -1,9 +1,10 @@
 <ul class="social">
   {{ range .Site.Params.Social }}
   <li>
-    <a target="_blank" href="{{ .url }}">
+    <a target="_blank" rel="noopener" href="{{ .url }}">
       {{ $svg := resources.Get (printf "svgs/%s.svg" .icon) }}
       {{ $svg.Content | safeHTML }}
+      {{ title .icon }}
     </a>
   </li>
   {{ end }}
