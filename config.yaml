@@ -32,3 +32,5 @@ module:
     mounts:
     - source: svgs/brands
       target: assets/svgs
+    - source: svgs/solid/terminal.svg
+      target: assets/favicon.svg

@@ -4,6 +4,11 @@
 <meta name="keywords" content="{{ delimit .Site.Params.Meta.Keywords ", " }}">
 <meta name="description" content="{{ .Site.Params.Meta.Description }}">
 
+{{ $icon := resources.Get "favicon.svg" }}
+{{ $icon = replaceRE "(<svg[^>]+)>" "$1 fill=\"grey\">" $icon.Content | resources.FromString "favicon.svg" }}
+<link rel="icon" type="image/svg+xml" href="{{ $icon.RelPermalink }}" sizes="any">
+<link rel="mask-icon" type="image/svg+xml" href="{{ $icon.RelPermalink }}" color="grey">
+
 {{ $css := resources.Get "css/style.scss" | toCSS (dict "outputStyle" "compressed")}}
 <style type="text/css">{{ $css.Content | safeCSS }}</style>
 
