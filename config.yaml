@@ -20,11 +20,7 @@ params:
   - icon: xing
     url: https://xing.to/steveteuber
 
-disableKinds:
-- RSS
-- sitemap
-- taxonomy
-- term
+disableKinds: [RSS, sitemap, taxonomy, term]
 
 module:
   imports:
