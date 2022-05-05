@@ -16,10 +16,15 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Read go.mod
+      id: go-mod
+      run: |
+        echo "::set-output name=version::$(go mod edit -json | jq -r .Go)"
+
     - name: Setup Go
       uses: actions/setup-go@v3
       with:
-        go-version: 1.16
+        go-version: ${{ steps.go-mod.outputs.version }}
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
