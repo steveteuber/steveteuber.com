@@ -6,5 +6,5 @@
 {{ end }}
 
 <a href="{{ .Site.BaseURL | relURL }}">
-  <img class="avatar" alt="{{ .Site.Params.Avatar.Name }}" width="{{ $size }}" height="{{ $size }}" src="{{ .Site.Params.Avatar.Url }}?s={{ $size }}" srcset="{{ delimit $srcset "," }}">
+  <img class="avatar" alt="{{ .Site.Params.Avatar.Name }}" width="{{ $size }}" height="{{ $size }}" fetchpriority="high" src="{{ .Site.Params.Avatar.Url }}?s={{ $size }}" srcset="{{ delimit $srcset "," }}">
 </a>

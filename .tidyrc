@@ -1,5 +1,6 @@
 indent: auto
 indent-spaces: 2
 quiet: yes
+show-warnings: no
 tidy-mark: no
 wrap: 0
