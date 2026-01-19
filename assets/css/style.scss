@@ -70,7 +70,7 @@ ul {
     overflow: hidden;
 
     &:hover svg {
-      fill: $hover-color;
+      color: $hover-color;
     }
   }
 
@@ -79,6 +79,6 @@ ul {
     height: inherit;
     width: inherit;
 
-    fill: $font-color;
+    color: $font-color;
   }
 }

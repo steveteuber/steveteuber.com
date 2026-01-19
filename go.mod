@@ -1,5 +1,5 @@
 module github.com/steveteuber/steveteuber.com
 
-go 1.18
+go 1.25
 
-require github.com/FortAwesome/Font-Awesome v0.0.0-20230207192303-d02961b01815 // indirect
+require github.com/FortAwesome/Font-Awesome v0.0.0-20251001191440-41cfe644047f // indirect
