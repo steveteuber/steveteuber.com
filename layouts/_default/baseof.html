@@ -5,7 +5,9 @@
 </head>
 <body>
   <main>
+    {{ partial "avatar.html" . }}
     {{ block "main" . }}{{ end }}
+    {{ partial "social.html" . }}
   </main>
 </body>
 </html>
