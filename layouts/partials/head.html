@@ -1,8 +1,10 @@
 <meta charset="utf-8">
 {{ hugo.Generator }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="{{ .Site.Params.Avatar.Name }}">
 <meta name="keywords" content="{{ delimit .Site.Params.Meta.Keywords ", " }}">
 <meta name="description" content="{{ .Site.Params.Meta.Description }}">
+<meta name="theme-color" content="#0f0f0f">
 
 {{ $icon := resources.Get "favicon.svg" }}
 {{ $icon = replaceRE "(<svg[^>]+)>" "$1 color=\"grey\">" $icon.Content | resources.FromString "favicon.svg" }}
