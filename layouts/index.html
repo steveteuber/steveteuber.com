@@ -2,7 +2,9 @@
 
 <header>
   <h1>{{ .Site.Params.Avatar.Name }}</h1>
-  <p>{{ .Site.Params.Avatar.Info }}</p>
+  <p>{{ .Site.Params.Avatar.Title }}</p>
 </header>
+
+<p>{{ .Site.Params.Avatar.Intro | markdownify }}</p>
 
 {{ end }}

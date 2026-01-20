@@ -1,15 +1,34 @@
 title: Steve Teuber - DevOps Engineer
 params:
   meta:
-    keywords: [DevOps, Docker, GitHub, Go, Kubernetes, Terraform, Vault]
+    keywords:
+    - Automation
+    - AWS
+    - CI/CD
+    - Cloud Native
+    - DevOps
+    - Docker
+    - GitHub
+    - Go
+    - Grafana
+    - Infrastructure as Code
+    - Kubernetes
+    - Observability
+    - Open Source
+    - Podman
+    - Pulumi
+    - Security
+    - Terraform
     description: >-
       Hi! I'm Steve. I'm a DevOps Engineer with a focus on Automation and Security.
-      My daily toolset includes Docker, GitHub, Go, Kubernetes, Terraform and Vault.
+      My daily toolset includes AWS, GitHub, Go, Grafana, Kubernetes, Podman and Pulumi.
       However, I'm trying to find things that are really cool and not just a hype.
   avatar:
     url: https://avatars.githubusercontent.com/steveteuber
     name: Steve Teuber
-    info: DevOps Engineer
+    title: DevOps Engineer
+    intro: >-
+      Hi! I'm Steve. I'm a DevOps Engineer with a focus on **Automation** and **Security**.
   social:
   - icon: github
     url: https://github.com/steveteuber
@@ -20,7 +39,7 @@ params:
   - icon: xing
     url: https://xing.to/steveteuber
 
-disableKinds: [RSS, sitemap, taxonomy, term]
+disableKinds: [rss, sitemap, taxonomy, term]
 
 module:
   imports:
